@@ -1006,28 +1006,25 @@ var about_exports = {};
 __export(about_exports, {
   default: () => AboutRoute
 });
-var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime");
+var import_material = require("@mui/material"), import_jsx_dev_runtime13 = require("react/jsx-dev-runtime");
 function AboutRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("div", { className: "w-full mt-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("h1", { children: "Hakk\u0131nda" }, void 0, !1, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 4,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("p", { className: "mt-4 text-justify", children: "Akak\xE7e, t\xFCketiciyi do\u011Fru \xFCr\xFCn, do\u011Fru sat\u0131c\u0131 ve do\u011Fru fiyatla bulu\u015Fturan bir al\u0131\u015Fveri\u015F platformudur. ODT\xDC Teknokent'te kuruldu\u011Fu 2000 y\u0131l\u0131ndan bu yana al\u0131\u015Fveri\u015F\xE7ilere en ucuz fiyatlar\u0131 sunan Akak\xE7e, T\xFCrkiye'de h\u0131zla b\xFCy\xFCyen e-ticaret sekt\xF6r\xFCn\xFCn referans merkezi olarak \xE7al\u0131\u015F\u0131yor. Ayl\u0131k 40 milyonun \xFCzerinde al\u0131\u015Fveri\u015F\xE7iyle T\xFCrkiye e-ticaret pazar\u0131n\u0131n %95'ine tek platform \xFCzerinden, h\u0131zl\u0131 ve kolay eri\u015Fim sa\u011Flayan Akak\xE7e, h\u0131zla b\xFCy\xFCyen uzman ekibinin yan\u0131 s\u0131ra geni\u015F sat\u0131c\u0131 a\u011F\u0131 sayesinde al\u0131\u015Fveri\u015F\xE7ilerin arad\u0131klar\u0131 her t\xFCrl\xFC \xFCr\xFCn i\xE7in birinci adres haline geldi. Akak\xE7e, Japon Beenos grubu ortakl\u0131\u011F\u0131nda, g\xFC\xE7l\xFC altyap\u0131s\u0131 ve uzman kadrosuyla beraber teknoloji \xFCretiminde ger\xE7ekle\u015Ftirdi\u011Fi ilklerle sekt\xF6r\xFCne y\xF6n vermektedir." }, void 0, !1, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 5,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_material.Grid, { className: "mt-5", container: !0, justifyContent: "center", alignItems: "center", style: { textAlign: "center" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_material.Grid, { item: !0, xs: 12, children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_material.Typography, { variant: "body1", className: "mt-4 text-justify", style: { textAlign: "center" }, children: "Akak\xE7e, kuruldu\u011Fu 2000 y\u0131l\u0131ndan bu yana T\xFCrkiye'nin lider kar\u015F\u0131la\u015Ft\u0131rmal\u0131 al\u0131\u015Fveri\u015F platformudur. Akak\xE7e, sahip oldu\u011Fu teknolojiler ve s\xFCrekli inovasyon ile T\xFCrk m\xFC\u015Fterilerine en geli\u015Fmi\u015F deneyimi ya\u015Fatmay\u0131 hedeflemektedir. Akak\xE7e'nin web sitesi ve mobil uygulamalar\u0131 her ay 40 milyondan fazla al\u0131\u015Fveri\u015F\xE7iyi desteklemektedir. Al\u0131\u015Fveri\u015F yapanlar, y\xFCz binlerce \xFCr\xFCn i\xE7in detayl\u0131 fiyat, \xF6zellik ve konum bilgilerine ula\u015Fabilmektedir. Akak\xE7e, online sat\u0131c\u0131lar i\xE7in en \xF6nemli referans kaynaklar\u0131ndan biridir. 2013 y\u0131l\u0131nda Japon Netprice grubu \u015Firkete stratejik bir yat\u0131r\u0131m yapm\u0131\u015Ft\u0131r. Akak\xE7e, Ankara'da ODT\xDC Teknokent'te yer almakta ve \u0130stanbul'da bir ofisi bulunmaktad\u0131r." }, void 0, !1, {
     fileName: "app/routes/about.tsx",
-    lineNumber: 3,
+    lineNumber: 7,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/about.tsx",
+    lineNumber: 6,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/about.tsx",
+    lineNumber: 5,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-EDT7Y3F2.js", imports: ["/build/_shared/chunk-QWFHPD2T.js", "/build/_shared/chunk-YNKH67UB.js", "/build/_shared/chunk-7HYSD3WE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KXGBDKQR.js", imports: ["/build/_shared/chunk-KM7WCLVG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-2G6HUQU6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-QQCII5GQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-37Y7T5TL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-D73U3E5M.js", imports: ["/build/_shared/chunk-PB2TCWQP.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-Q6XPIWYL.js", imports: ["/build/_shared/chunk-PB2TCWQP.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a6997b96", hmr: void 0, url: "/build/manifest-A6997B96.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-EDT7Y3F2.js", imports: ["/build/_shared/chunk-QWFHPD2T.js", "/build/_shared/chunk-YNKH67UB.js", "/build/_shared/chunk-7HYSD3WE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KXGBDKQR.js", imports: ["/build/_shared/chunk-KM7WCLVG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-2G6HUQU6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-3KV6YLIB.js", imports: ["/build/_shared/chunk-OQ5WVRCT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-37Y7T5TL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-D73U3E5M.js", imports: ["/build/_shared/chunk-PB2TCWQP.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-RDRQFO2W.js", imports: ["/build/_shared/chunk-PB2TCWQP.js", "/build/_shared/chunk-OQ5WVRCT.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "1584fec3", hmr: void 0, url: "/build/manifest-1584FEC3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !1, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
