@@ -91,7 +91,6 @@ export default function ProductsIndexRoute() {
             position: "absolute",
             top: "48%",
             left: "10px",
-            color: "white",
             zIndex: 1000,
             width: "2rem"
           }}
@@ -105,7 +104,6 @@ export default function ProductsIndexRoute() {
             position: "absolute",
             top: "50%",
             right: "10px",
-            color: "white",
             zIndex: 1000,
             width: "2rem"
           }}
