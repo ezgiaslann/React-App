@@ -10,11 +10,16 @@ export default function ProductCarosel({ product }: { product: any }) {
   });
 
   return (
-    <div className="p-6">
+    <div
+      className="p-6 flex flex-col items-center justify-center text-center"
+      style={{ width: "100%", maxWidth: "400px", margin: "auto" }}
+    >
       <Link to={`/products/${product.code}`}>
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col items-center gap-4">
           {/* Ürün Görseli */}
-          <div className="flex-shrink-0 relative w-60 h-60">
+          <div
+            className="relative w-60 h-60 flex items-center justify-center"
+          >
             <div
               className="absolute inline-flex items-center justify-center w-12 h-12 text-m font-bold text-white 
               bg-red-500 border-2 border-white rounded-full -top-2 -right-2"
@@ -29,15 +34,15 @@ export default function ProductCarosel({ product }: { product: any }) {
           </div>
 
           {/* Ürün Detayları */}
-          <div className="flex-grow space-y-4 ml-4">
+          <div className="space-y-2">
             <h3 className="text-lg font-bold text-gray-700">{product.name}</h3>
 
             <p className="font-bold text-gray-700">
               <span className="text-2xl">{formattedNumber.split(",")[0]}</span>
-              <span className="text-lg">{formattedNumber.split(",")[1]} TL</span>
+              <span className="text-lg">,{formattedNumber.split(",")[1]} TL</span>
             </p>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <p className="text-gray-500 font-medium">{`${product.countOfPrices} satıcı`}</p>
               <AiOutlineDoubleRight className="text-gray-500" />
             </div>

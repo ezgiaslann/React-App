@@ -3,8 +3,9 @@ import { json } from "@remix-run/node";
 import axios from "axios";
 import { useLoaderData } from "@remix-run/react";
 import ProductCard from "~/components/product-cards";
-import { IconButton } from "@material-tailwind/react";
+import { Grid, IconButton, Typography } from "@mui/material";
 import ProductCarosel from "~/components/product-carosel";
+import { East, KeyboardBackspace } from '@mui/icons-material';
 
 export const loader = async () => {
   let horizontalProducts: any = [];
@@ -42,62 +43,74 @@ export default function ProductsIndexRoute() {
   return (
     <>
       {/* Carousel */}
-      <div className="relative">
-        <div className="flex overflow-hidden">
-          {horizontalProducts.map((product: any, index: any) => (
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          maxWidth: "800px",
+          margin: "auto",
+          overflow: "hidden",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "10px",
+          padding: "20px",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        {/* Carousel Items */}
+        <div
+          style={{
+            display: "flex",
+            transition: "transform 0.5s ease-in-out",
+            transform: `translateX(-${activeIndex * 100}%)`,
+          }}
+        >
+          {horizontalProducts.map((product: any, index: number) => (
             <div
               key={product.code}
-              className={`transition-all duration-500 ease-in-out transform ${index === activeIndex ? "block" : "hidden"
-                }`}
+              style={{
+                minWidth: "100%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
+                padding: "20px",
+              }}
             >
               <ProductCarosel product={product} />
             </div>
           ))}
         </div>
 
-        {/* Prev/Next Buttons */}
+        {/* Navigation Buttons */}
         <IconButton
-          variant="text"
-          size="lg"
           onClick={handlePrev}
-          className="!absolute top-2/4 left-4 -translate-y-2/4 p-0" // p-0 ile padding'i sıfırlıyoruz
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "10px",
+            transform: "translateY(-50%)",
+            color: "white",
+            zIndex: 1000,
+            width: "2rem"
+          }}
+          aria-label="previous"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-            />
-          </svg>
+          <KeyboardBackspace />
         </IconButton>
-
         <IconButton
-          variant="text"
-          size="lg"
           onClick={handleNext}
-          className="!absolute top-2/4 right-4 -translate-y-2/4 p-0" // p-0 ile padding'i sıfırlıyoruz
+          style={{
+            position: "absolute",
+            top: "50%",
+            right: "10px",
+            transform: "translateY(-50%)",
+            color: "white",
+            zIndex: 1000,
+            width: "2rem"
+          }}
+          aria-label="next"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-            />
-          </svg>
+          <East />
         </IconButton>
       </div>
 

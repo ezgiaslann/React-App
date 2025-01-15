@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/_index.tsx"],
+  "sourcesContent": ["import { Link } from \"@remix-run/react\";\r\n\r\nexport default function IndexRoute() {\r\n return (\r\n  <div>\r\n    {/* Hero Banner */}\r\n   <div className=\"px-12 py-32 text-center text-gray-200 bg-gray-800\">\r\n    <h1 className=\"text-5xl text-gray-100\">New arrivals are here</h1>\r\n    <p className=\"px-8 mt-2 font-semibold text-gray-300\">\r\n      The new arrivals have, well, newly arrived. Check out the latest\r\n      options from our summer small-batch release while they're still in\r\n      stock.\r\n    </p>\r\n    <Link\r\n     to=\"/products\"\r\n     className=\"inline-block px-6 py-2 mt-8 text-sm font-semibold text-gray-700 transition duration-300 bg-gray-100 rounded-md hover:bg-white hover:text-gray-900 hover:scale-110 color\"\r\n    >\r\n      Shop New Arrivals\r\n    </Link>\r\n   </div>\r\n  </div>\r\n  );\r\n}"],
+  "mappings": ";;;;;;;;;AAOI;AALW,SAAR,aAA8B;AACpC,SACC,mDAAC,SAEA,6DAAC,SAAI,WAAU,qDACd;AAAA,uDAAC,QAAG,WAAU,0BAAyB,qCAAvC;AAAA;AAAA;AAAA;AAAA,WAA4D;AAAA,IAC5D,mDAAC,OAAE,WAAU,yCAAwC,0JAArD;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,IACA;AAAA,MAAC;AAAA;AAAA,QACA,IAAG;AAAA,QACH,WAAU;AAAA,QACV;AAAA;AAAA,MAHD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAKA;AAAA,OAZD;AAAA;AAAA;AAAA;AAAA,SAaA,KAfD;AAAA;AAAA;AAAA;AAAA,SAgBA;AAEF;",
+  "names": []
+}
