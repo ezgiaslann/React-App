@@ -47,7 +47,7 @@ export default function ProductsIndexRoute() {
         style={{
           position: "relative",
           width: "100%",
-          maxWidth: "800px",
+          maxWidth: "1015px",
           margin: "auto",
           overflow: "hidden",
           backgroundColor: "#f9f9f9",
@@ -62,18 +62,21 @@ export default function ProductsIndexRoute() {
             display: "flex",
             transition: "transform 0.5s ease-in-out",
             transform: `translateX(-${activeIndex * 100}%)`,
+            width: `${horizontalProducts.length * 25}%`,
+            height: "100%", 
           }}
         >
           {horizontalProducts.map((product: any, index: number) => (
             <div
               key={product.code}
               style={{
-                minWidth: "100%",
+                flex: "0 0 100%",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                justifyContent: "center",
                 textAlign: "center",
-                padding: "20px",
+                height: "100%",
               }}
             >
               <ProductCarosel product={product} />

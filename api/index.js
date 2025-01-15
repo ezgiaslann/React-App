@@ -817,7 +817,7 @@ function ProductsIndexRoute() {
         style: {
           position: "relative",
           width: "100%",
-          maxWidth: "800px",
+          maxWidth: "1015px",
           margin: "auto",
           overflow: "hidden",
           backgroundColor: "#f9f9f9",
@@ -832,22 +832,25 @@ function ProductsIndexRoute() {
               style: {
                 display: "flex",
                 transition: "transform 0.5s ease-in-out",
-                transform: `translateX(-${activeIndex * 100}%)`
+                transform: `translateX(-${activeIndex * 100}%)`,
+                width: `${horizontalProducts.length * 25}%`,
+                height: "100%"
               },
               children: horizontalProducts.map((product, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
                 "div",
                 {
                   style: {
-                    minWidth: "100%",
+                    flex: "0 0 100%",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
+                    justifyContent: "center",
                     textAlign: "center",
-                    padding: "20px"
+                    height: "100%"
                   },
                   children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(ProductCarosel, { product }, void 0, !1, {
                     fileName: "app/routes/products/index.tsx",
-                    lineNumber: 79,
+                    lineNumber: 82,
                     columnNumber: 15
                   }, this)
                 },
@@ -855,7 +858,7 @@ function ProductsIndexRoute() {
                 !1,
                 {
                   fileName: "app/routes/products/index.tsx",
-                  lineNumber: 68,
+                  lineNumber: 70,
                   columnNumber: 13
                 },
                 this
@@ -886,7 +889,7 @@ function ProductsIndexRoute() {
               "aria-label": "previous",
               children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(import_icons_material.KeyboardBackspace, {}, void 0, !1, {
                 fileName: "app/routes/products/index.tsx",
-                lineNumber: 98,
+                lineNumber: 101,
                 columnNumber: 11
               }, this)
             },
@@ -894,7 +897,7 @@ function ProductsIndexRoute() {
             !1,
             {
               fileName: "app/routes/products/index.tsx",
-              lineNumber: 85,
+              lineNumber: 88,
               columnNumber: 9
             },
             this
@@ -915,7 +918,7 @@ function ProductsIndexRoute() {
               "aria-label": "next",
               children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(import_icons_material.East, {}, void 0, !1, {
                 fileName: "app/routes/products/index.tsx",
-                lineNumber: 113,
+                lineNumber: 116,
                 columnNumber: 11
               }, this)
             },
@@ -923,7 +926,7 @@ function ProductsIndexRoute() {
             !1,
             {
               fileName: "app/routes/products/index.tsx",
-              lineNumber: 100,
+              lineNumber: 103,
               columnNumber: 9
             },
             this
@@ -941,11 +944,11 @@ function ProductsIndexRoute() {
     ),
     /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "grid grid-cols-2 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2", children: products.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(ProductCard, { product }, product.code, !1, {
       fileName: "app/routes/products/index.tsx",
-      lineNumber: 120,
+      lineNumber: 123,
       columnNumber: 11
     }, this)) }, void 0, !1, {
       fileName: "app/routes/products/index.tsx",
-      lineNumber: 118,
+      lineNumber: 121,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -1041,7 +1044,7 @@ function AboutRoute() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-SMVSP4E3.js", imports: ["/build/_shared/chunk-33LX2DL7.js", "/build/_shared/chunk-SBNNL67F.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TPA425F4.js", imports: ["/build/_shared/chunk-IFADANBJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-VFG4SUKL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DW6ZQHKT.js", imports: ["/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-OFPMLCGB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-R6SA3NNN.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-5WWPP76V.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js", "/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "48f635fc", hmr: void 0, url: "/build/manifest-48F635FC.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SMVSP4E3.js", imports: ["/build/_shared/chunk-33LX2DL7.js", "/build/_shared/chunk-SBNNL67F.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TPA425F4.js", imports: ["/build/_shared/chunk-IFADANBJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-VFG4SUKL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DW6ZQHKT.js", imports: ["/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-OFPMLCGB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-R6SA3NNN.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-MDYWNVWG.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js", "/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a7e81820", hmr: void 0, url: "/build/manifest-A7E81820.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !1, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
