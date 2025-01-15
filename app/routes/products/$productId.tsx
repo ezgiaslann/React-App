@@ -27,7 +27,12 @@ export default function ProductRoute() {
   }
 
   return (
-    <div>
+    <div style={{
+      display: "flex",          
+      justifyContent: "center", 
+      alignItems: "center",      
+      backgroundColor: "#f9f9f9",
+    }}>
       <ProductDetailCard key={data.code} product={data} />
     </div>
   );

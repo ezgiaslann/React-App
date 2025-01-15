@@ -388,7 +388,7 @@ var import_ai = require("react-icons/ai"), import_react4 = require("react"), imp
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h6", { className: "text-s font-bold text-gray-400 my-5 ", children: product.mkName }, void 0, !1, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 33,
+        lineNumber: 25,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex float-right", children: Array(5).map((_, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
@@ -402,45 +402,45 @@ var import_ai = require("react-icons/ai"), import_react4 = require("react"), imp
         !1,
         {
           fileName: "app/components/product-detail-cards.tsx",
-          lineNumber: 39,
+          lineNumber: 31,
           columnNumber: 21
         },
         this
       )) }, void 0, !1, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 34,
+        lineNumber: 26,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 32,
+      lineNumber: 24,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h3", { className: "text-lg font-bold text-gray-700 hover:underline my-5", children: product.productName }, void 0, !1, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 51,
+      lineNumber: 43,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { className: "inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20", children: product.badge }, void 0, !1, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 54,
+      lineNumber: 46,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { className: "rounded mx-auto d-block w-60 my-5", src: product.imageUrl, alt: product.name }, void 0, !1, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 55,
+      lineNumber: 47,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("hr", {}, void 0, !1, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 56,
+      lineNumber: 48,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "grid items-center ", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-col px-4  ", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: " flex text-center font-bold text-gray-500", children: "Kapasite Se\xE7enekleri" }, void 0, !1, {
           fileName: "app/components/product-detail-cards.tsx",
-          lineNumber: 61,
+          lineNumber: 53,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "grid grid-cols-3 gap-2 mt-2 xl:grid-cols-3", children: product.storageOptions.map((storageOption, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
@@ -454,60 +454,60 @@ var import_ai = require("react-icons/ai"), import_react4 = require("react"), imp
           !1,
           {
             fileName: "app/components/product-detail-cards.tsx",
-            lineNumber: 64,
+            lineNumber: 56,
             columnNumber: 17
           },
           this
         )) }, void 0, !1, {
           fileName: "app/components/product-detail-cards.tsx",
-          lineNumber: 62,
+          lineNumber: 54,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 60,
+        lineNumber: 52,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-bold flex text-center mt-2", children: ` ${product.countOfPrices} sat\u0131c\u0131 i\xE7inde kargo dahil en ucuz fiyat se\xE7ene\u011Fi` }, void 0, !1, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 77,
+        lineNumber: 69,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 59,
+      lineNumber: 51,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-col items-center mt-2 p-4", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-bold text-gray-700", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { className: "text-lg", children: formattedNumber.split(",")[0] }, void 0, !1, {
           fileName: "app/components/product-detail-cards.tsx",
-          lineNumber: 83,
+          lineNumber: 75,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { className: "text-sm", children: formattedNumber.split(",")[1] }, void 0, !1, {
           fileName: "app/components/product-detail-cards.tsx",
-          lineNumber: 84,
+          lineNumber: 76,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 82,
+        lineNumber: 74,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-bold text-teal-600", children: product.freeShipping ? "\xDCcretsiz Kargo" : "" }, void 0, !1, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 86,
+        lineNumber: 78,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-bold  text-gray-400", children: ` Son g\xFCncelleme: ${product.lastUpdate}` }, void 0, !1, {
         fileName: "app/components/product-detail-cards.tsx",
-        lineNumber: 87,
+        lineNumber: 79,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/product-detail-cards.tsx",
-      lineNumber: 81,
+      lineNumber: 73,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
@@ -537,9 +537,14 @@ function ProductRoute() {
     fileName: "app/routes/products/$productId.tsx",
     lineNumber: 26,
     columnNumber: 12
-  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(product_detail_cards_default, { product: data }, data.code, !1, {
+  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { style: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f9f9f9"
+  }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(product_detail_cards_default, { product: data }, data.code, !1, {
     fileName: "app/routes/products/$productId.tsx",
-    lineNumber: 31,
+    lineNumber: 36,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/routes/products/$productId.tsx",
@@ -879,9 +884,8 @@ function ProductsIndexRoute() {
               onClick: handlePrev,
               style: {
                 position: "absolute",
-                top: "50%",
+                top: "48%",
                 left: "10px",
-                transform: "translateY(-50%)",
                 color: "white",
                 zIndex: 1e3,
                 width: "2rem"
@@ -889,7 +893,7 @@ function ProductsIndexRoute() {
               "aria-label": "previous",
               children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(import_icons_material.KeyboardBackspace, {}, void 0, !1, {
                 fileName: "app/routes/products/index.tsx",
-                lineNumber: 101,
+                lineNumber: 100,
                 columnNumber: 11
               }, this)
             },
@@ -910,7 +914,6 @@ function ProductsIndexRoute() {
                 position: "absolute",
                 top: "50%",
                 right: "10px",
-                transform: "translateY(-50%)",
                 color: "white",
                 zIndex: 1e3,
                 width: "2rem"
@@ -918,7 +921,7 @@ function ProductsIndexRoute() {
               "aria-label": "next",
               children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(import_icons_material.East, {}, void 0, !1, {
                 fileName: "app/routes/products/index.tsx",
-                lineNumber: 116,
+                lineNumber: 114,
                 columnNumber: 11
               }, this)
             },
@@ -926,7 +929,7 @@ function ProductsIndexRoute() {
             !1,
             {
               fileName: "app/routes/products/index.tsx",
-              lineNumber: 103,
+              lineNumber: 102,
               columnNumber: 9
             },
             this
@@ -944,11 +947,11 @@ function ProductsIndexRoute() {
     ),
     /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "grid grid-cols-2 gap-6 px-4 mt-8 md:px-12 lg:px-6 xl:px-4 xl:gap-6 2xl:px-24 2xl:gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2", children: products.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(ProductCard, { product }, product.code, !1, {
       fileName: "app/routes/products/index.tsx",
-      lineNumber: 123,
+      lineNumber: 121,
       columnNumber: 11
     }, this)) }, void 0, !1, {
       fileName: "app/routes/products/index.tsx",
-      lineNumber: 121,
+      lineNumber: 119,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -1044,7 +1047,7 @@ function AboutRoute() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-SMVSP4E3.js", imports: ["/build/_shared/chunk-33LX2DL7.js", "/build/_shared/chunk-SBNNL67F.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TPA425F4.js", imports: ["/build/_shared/chunk-IFADANBJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-VFG4SUKL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DW6ZQHKT.js", imports: ["/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-OFPMLCGB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-R6SA3NNN.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-MDYWNVWG.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js", "/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a7e81820", hmr: void 0, url: "/build/manifest-A7E81820.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SMVSP4E3.js", imports: ["/build/_shared/chunk-33LX2DL7.js", "/build/_shared/chunk-SBNNL67F.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TPA425F4.js", imports: ["/build/_shared/chunk-IFADANBJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-VFG4SUKL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DW6ZQHKT.js", imports: ["/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-OFPMLCGB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-ZQDAWBBL.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-PA5HWV63.js", imports: ["/build/_shared/chunk-ZDW3GX7J.js", "/build/_shared/chunk-3GDPPI6Z.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "7229cfa9", hmr: void 0, url: "/build/manifest-7229CFA9.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !1, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

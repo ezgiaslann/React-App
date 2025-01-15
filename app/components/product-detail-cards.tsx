@@ -21,14 +21,6 @@ const ProductDetailCard = ({ product }: any) => {
   return (
     <section className="overflow-hidden bg-white rounded-xl shadow:md hover:shadow-lg w-96 ">
       <div className="my-8 mx-8">
-        {/* <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          99+
-          <span class="visually-hidden">unread messages</span>
-        </span>
-      </button> */}
-        {/* <span class="fa fa-star checked">{product.rating}</span> */}
         <div >
           <h6 className="text-s font-bold text-gray-400 my-5 ">{product.mkName}</h6>
           <div className="flex float-right" >
