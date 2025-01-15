@@ -4,9 +4,10 @@
   "scripts": {
     "start": "remix-serve build",
     "typecheck": "tsc",
-    "build": "npm run build:css && remix build",
+    "build": "npm run build:css && npm run clean && remix build",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rimraf .cache dist build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
