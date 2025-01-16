@@ -190,7 +190,7 @@ function links() {
 function meta() {
   return {
     charset: "utf-8",
-    title: "Remix StoreFront",
+    title: "Remix Akakce",
     viewport: "width=device-width,initial-scale=1"
   };
 }
