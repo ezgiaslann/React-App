@@ -7,7 +7,8 @@
     "build": "npm run build:css && npm run clean && remix build",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
     "test": "jest",
-    "clean": "rm -rf .cache build dist"
+    "clean": "rm -rf .cache build dist",
+    "prebuild": "rimraf public/build/*"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -47,7 +47,7 @@ export default function ProductsIndexRoute() {
         style={{
           position: "relative",
           width: "100%",
-          maxWidth: "1015px",
+          maxWidth: "1018px",
           margin: "auto",
           overflow: "hidden",
           backgroundColor: "#f9f9f9",
