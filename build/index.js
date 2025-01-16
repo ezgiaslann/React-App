@@ -186,7 +186,8 @@ function Navbar() {
         url: "/about"
       }
     ].map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.NavLink, { to: link.url, className: "navlink", style: ({ isActive }) => ({
-      color: isActive ? "#2387bf" : "initial"
+      color: isActive ? "#2387bf" : "initial",
+      borderBottom: isActive ? "2p solid #2387bf" : "none"
     }), children: link.label }, index, !1, {
       fileName: "app/layouts/navbar.tsx",
       lineNumber: 29,
@@ -204,13 +205,13 @@ function Navbar() {
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_bi.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
             fileName: "app/layouts/navbar.tsx",
-            lineNumber: 43,
+            lineNumber: 44,
             columnNumber: 11
           }, this),
           " ",
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: "0" }, void 0, !1, {
             fileName: "app/layouts/navbar.tsx",
-            lineNumber: 43,
+            lineNumber: 44,
             columnNumber: 49
           }, this)
         ]
@@ -219,13 +220,13 @@ function Navbar() {
       !0,
       {
         fileName: "app/layouts/navbar.tsx",
-        lineNumber: 39,
+        lineNumber: 40,
         columnNumber: 9
       },
       this
     ) }, void 0, !1, {
       fileName: "app/layouts/navbar.tsx",
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -1055,7 +1056,7 @@ function AboutRoute() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-Q6VULSIN.js", imports: ["/build/_shared/chunk-IBRJ2CIW.js", "/build/_shared/chunk-7HYSD3WE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-HQIR5CGU.js", imports: ["/build/_shared/chunk-KM7WCLVG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-BORXWP7X.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PNTGAINB.js", imports: ["/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-37Y7T5TL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-MFZMZDZQ.js", imports: ["/build/_shared/chunk-BRSEBPNH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-AUL6JUQP.js", imports: ["/build/_shared/chunk-BRSEBPNH.js", "/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a818bf28", hmr: void 0, url: "/build/manifest-A818BF28.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-Q6VULSIN.js", imports: ["/build/_shared/chunk-IBRJ2CIW.js", "/build/_shared/chunk-7HYSD3WE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CXAOZE3B.js", imports: ["/build/_shared/chunk-KM7WCLVG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-BORXWP7X.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PNTGAINB.js", imports: ["/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-37Y7T5TL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-MFZMZDZQ.js", imports: ["/build/_shared/chunk-BRSEBPNH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-AUL6JUQP.js", imports: ["/build/_shared/chunk-BRSEBPNH.js", "/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "7ae2dabf", hmr: void 0, url: "/build/manifest-7AE2DABF.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !1, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
