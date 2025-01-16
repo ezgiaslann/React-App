@@ -13,8 +13,8 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@material-tailwind/react": "^2.0.8",
-    "@mui/icons-material": "^6.4.0",
-    "@mui/material": "^5.13.7",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.4",
     "@mui/styles": "^6.4.0",
     "@remix-run/css-bundle": "^1.19.1",
     "@remix-run/node": "^1.19.1",
@@ -47,6 +47,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.6.2",
     "jest-preview": "^0.3.1",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.17",
     "ts-jest": "^29.2.5",
     "typescript": "^5.0.4"

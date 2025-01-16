@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/checkout.tsx"],
-  "sourcesContent": ["export default function CheckoutRoute() {\r\n    return (\r\n     <div className=\"w-full mt-8\">\r\n      <h1>Checkout Page</h1>\r\n     </div>\r\n     );\r\n   }"],
-  "mappings": ";;;;;;AAGM;AAHS,SAAR,gBAAiC;AACpC,SACC,mDAAC,SAAI,WAAU,eACd,6DAAC,QAAG,6BAAJ;AAAA;AAAA;AAAA;AAAA,SAAiB,KADlB;AAAA;AAAA;AAAA;AAAA,SAEA;AAEF;",
-  "names": []
-}
