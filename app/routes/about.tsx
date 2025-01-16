@@ -2,7 +2,7 @@ import { Grid, Typography } from "@mui/material";
 
 export default function AboutRoute() {
   return (
-    <Grid className="mt-5" container justifyContent="center" alignItems="center" style={{ textAlign: "center" }}>
+    <Grid container justifyContent="center" alignItems="center" style={{ textAlign: "center", marginTop: "20px" }}>
       <Grid item xs={12}>
         <Typography variant="body1" className="mt-4 text-justify" style={{ textAlign: "center" }}>
           Akakçe, kurulduğu 2000 yılından bu yana Türkiye'nin lider karşılaştırmalı alışveriş platformudur. Akakçe, sahip olduğu teknolojiler ve sürekli inovasyon ile Türk müşterilerine en gelişmiş deneyimi yaşatmayı hedeflemektedir.
