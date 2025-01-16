@@ -1,12 +1,11 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
-  // ignoredRouteFiles: ["**/.*"],
   ignoredRouteFiles: ['.*', '**/__tests__/**'],
-  server: process.env.NODE_ENV === "development" ? undefined : "./server.ts",
-  serverBuildPath: "api/index.js",
+  serverBuildPath: "build/index.js",
   appDirectory: "app",
   assetsBuildDirectory: "public/build",
   publicPath: "/build/",
+  server: undefined,
   tailwind: true,
   future: {
     v2_errorBoundary: true,
