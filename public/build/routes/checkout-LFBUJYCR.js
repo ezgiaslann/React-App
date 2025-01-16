@@ -1,0 +1,1 @@
+import{d as t,g as o}from"/build/_shared/chunk-DLUJ32DX.js";var e=t(o());function u(){return(0,e.jsx)("div",{className:"w-full mt-8",children:(0,e.jsx)("h1",{children:"Checkout Page"})})}export{u as default};
