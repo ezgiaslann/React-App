@@ -14,11 +14,11 @@ import { renderToPipeableStream } from "react-dom/server";
 const ABORT_DELAY = 5_000;
 
 export default function handleRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext,
-  loadContext
+  request: any,
+  responseStatusCode: any,
+  responseHeaders: any,
+  remixContext: any,
+  loadContext: any
 ) {
   return isbot(request.headers.get("user-agent"))
     ? handleBotRequest(
@@ -36,10 +36,10 @@ export default function handleRequest(
 }
 
 function handleBotRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext
+  request: any,
+  responseStatusCode: any,
+  responseHeaders: any,
+  remixContext: any
 ) {
   return new Promise((resolve, reject) => {
     let shellRendered = false;
@@ -86,10 +86,10 @@ function handleBotRequest(
 }
 
 function handleBrowserRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext
+  request: any,
+  responseStatusCode: any,
+  responseHeaders: any,
+  remixContext: any
 ) {
   return new Promise((resolve, reject) => {
     let shellRendered = false;
