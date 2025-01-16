@@ -163,18 +163,18 @@ function Footer() {
 var import_react2 = require("@remix-run/react"), import_bi = require("react-icons/bi"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
 function Navbar() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("nav", { className: "flex items-center justify-between px-8 pt-2", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "font-mono text-3xl font-extrabold uppercase", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { className: "w-28", src: "/logo1.svg", alt: "akakce" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "font-mono text-3xl font-extrabold uppercase", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.Link, { to: "/products", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { className: "w-28", src: "/logo1.svg", alt: "akakce" }, void 0, !1, {
       fileName: "app/layouts/navbar.tsx",
       lineNumber: 22,
-      columnNumber: 6
+      columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/layouts/navbar.tsx",
       lineNumber: 21,
-      columnNumber: 5
+      columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/layouts/navbar.tsx",
       lineNumber: 20,
-      columnNumber: 4
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "space-x-4", children: [
       {
@@ -185,14 +185,16 @@ function Navbar() {
         label: "Hakk\u0131nda",
         url: "/about"
       }
-    ].map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.NavLink, { to: link.url, className: "navlink", children: link.label }, index, !1, {
+    ].map((link, index) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.NavLink, { to: link.url, className: "navlink", style: ({ isActive }) => ({
+      color: isActive ? "#2387bf" : "initial"
+    }), children: link.label }, index, !1, {
       fileName: "app/layouts/navbar.tsx",
       lineNumber: 29,
-      columnNumber: 6
+      columnNumber: 11
     }, this)) }, void 0, !1, {
       fileName: "app/layouts/navbar.tsx",
       lineNumber: 27,
-      columnNumber: 4
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "font-semibold text-gray-600 hover:text-emerald-500", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
       import_react2.NavLink,
@@ -202,14 +204,14 @@ function Navbar() {
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_bi.BiShoppingBag, { className: "text-xl" }, void 0, !1, {
             fileName: "app/layouts/navbar.tsx",
-            lineNumber: 41,
-            columnNumber: 6
+            lineNumber: 43,
+            columnNumber: 11
           }, this),
           " ",
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: "0" }, void 0, !1, {
             fileName: "app/layouts/navbar.tsx",
-            lineNumber: 41,
-            columnNumber: 44
+            lineNumber: 43,
+            columnNumber: 49
           }, this)
         ]
       },
@@ -217,19 +219,19 @@ function Navbar() {
       !0,
       {
         fileName: "app/layouts/navbar.tsx",
-        lineNumber: 37,
-        columnNumber: 5
+        lineNumber: 39,
+        columnNumber: 9
       },
       this
     ) }, void 0, !1, {
       fileName: "app/layouts/navbar.tsx",
-      lineNumber: 36,
-      columnNumber: 4
+      lineNumber: 38,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/layouts/navbar.tsx",
     lineNumber: 18,
-    columnNumber: 3
+    columnNumber: 5
   }, this);
 }
 
@@ -264,10 +266,10 @@ function Layout({ children }) {
 }
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-6XPZ5KJQ.css";
+var app_default = "/build/_assets/app-5VDG4PU4.css";
 
 // app/root.tsx
-var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+var import_react4 = require("react"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
 function links() {
   return [{ rel: "stylesheet", href: app_default }];
 }
@@ -279,34 +281,37 @@ function meta() {
   };
 }
 function App() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Document, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Layout, { children: [
+  let navigate = (0, import_react3.useNavigate)();
+  return (0, import_react4.useEffect)(() => {
+    navigate("/products");
+  }, [navigate]), /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Document, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Layout, { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.Outlet, {}, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 28,
-      columnNumber: 6
+      lineNumber: 35,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.ScrollRestoration, {}, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 29,
-      columnNumber: 6
+      lineNumber: 36,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.Scripts, {}, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 30,
-      columnNumber: 6
+      lineNumber: 37,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.LiveReload, {}, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 31,
-      columnNumber: 6
+      lineNumber: 38,
+      columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 27,
-    columnNumber: 5
+    lineNumber: 34,
+    columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/root.tsx",
-    lineNumber: 26,
+    lineNumber: 33,
     columnNumber: 5
   }, this);
 }
@@ -315,27 +320,32 @@ function Document({ children }) {
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 41,
-        columnNumber: 6
+        lineNumber: 48,
+        columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 42,
-        columnNumber: 6
+        lineNumber: 49,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("link", { rel: "icon", href: "/tik.png", type: "image/png" }, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 50,
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 40,
-      columnNumber: 5
+      lineNumber: 47,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("body", { children }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 44,
-      columnNumber: 5
+      lineNumber: 52,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 39,
+    lineNumber: 46,
     columnNumber: 5
   }, this);
 }
@@ -343,25 +353,25 @@ function ErrorBoundary({ error }) {
   return console.log(error), /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Document, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Layout, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "text-red-500", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { children: "Error" }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 55,
-      columnNumber: 7
+      lineNumber: 63,
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: error == null ? void 0 : error.message }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 56,
-      columnNumber: 7
+      lineNumber: 64,
+      columnNumber: 11
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 54,
-    columnNumber: 6
+    lineNumber: 62,
+    columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "app/root.tsx",
-    lineNumber: 53,
-    columnNumber: 5
+    lineNumber: 61,
+    columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/root.tsx",
-    lineNumber: 52,
+    lineNumber: 60,
     columnNumber: 5
   }, this);
 }
@@ -372,11 +382,11 @@ __export(productId_exports, {
   default: () => ProductRoute,
   loader: () => loader
 });
-var import_node2 = require("@remix-run/node"), import_react5 = require("@remix-run/react"), import_axios = __toESM(require("axios"));
+var import_node2 = require("@remix-run/node"), import_react6 = require("@remix-run/react"), import_axios = __toESM(require("axios"));
 
 // app/components/product-detail-cards.tsx
-var import_ai = require("react-icons/ai"), import_react4 = require("react"), import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), ProductDetailCard = ({ product }) => {
-  let [productGb, setProductGb] = (0, import_react4.useState)(product.storageOptions[0]), activeStars = parseInt(product.rating), formattedNumber = product.price.toLocaleString("tr-TR", {
+var import_ai = require("react-icons/ai"), import_react5 = require("react"), import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), ProductDetailCard = ({ product }) => {
+  let [productGb, setProductGb] = (0, import_react5.useState)(product.storageOptions[0]), activeStars = parseInt(product.rating), formattedNumber = product.price.toLocaleString("tr-TR", {
     style: "decimal",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
@@ -531,7 +541,7 @@ var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime"), loader = async (
   }
 };
 function ProductRoute() {
-  let { data, error } = (0, import_react5.useLoaderData)();
+  let { data, error } = (0, import_react6.useLoaderData)();
   return error ? /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: error }, void 0, !1, {
     fileName: "app/routes/products/$productId.tsx",
     lineNumber: 26,
@@ -558,17 +568,17 @@ __export(products_exports, {
   default: () => ProductsIndexRoute,
   loader: () => loader2
 });
-var import_react8 = require("react"), import_node3 = require("@remix-run/node"), import_axios2 = __toESM(require("axios")), import_react9 = require("@remix-run/react");
+var import_react9 = require("react"), import_node3 = require("@remix-run/node"), import_axios2 = __toESM(require("axios")), import_react10 = require("@remix-run/react");
 
 // app/components/product-cards.tsx
-var import_react6 = require("@remix-run/react"), import_ai2 = require("react-icons/ai"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+var import_react7 = require("@remix-run/react"), import_ai2 = require("react-icons/ai"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function ProductCard({ product }) {
   let formattedNumber = product.price.toLocaleString("tr-TR", {
     style: "decimal",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   });
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_jsx_dev_runtime8.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "overflow-hidden bg-white rounded-xl shadow:md hover:shadow-lg w-96 ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react6.Link, { to: `/products/${product.code}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "my-8 mx-8", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_jsx_dev_runtime8.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "overflow-hidden bg-white rounded-xl shadow:md hover:shadow-lg w-96 ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react7.Link, { to: `/products/${product.code}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "my-8 mx-8", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("button", { type: "button", className: "relative inline-flex items-center p-3 text-sm font-large text-center text-white rounded-xl ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: `absolute inline-flex items-center justify-center w-12 h-12 text-m font-bold text-white \r
             bg-red-500 border-2 border-white rounded-full -top-2 -right-2 dark:border-gray-900`, children: `% ${product.dropRatio}` }, void 0, !1, {
       fileName: "app/components/product-cards.tsx",
@@ -663,7 +673,7 @@ function ProductCard({ product }) {
 var import_material = require("@mui/material");
 
 // app/components/product-carosel.tsx
-var import_react7 = require("@remix-run/react"), import_ai3 = require("react-icons/ai"), import_jsx_dev_runtime9 = require("react/jsx-dev-runtime");
+var import_react8 = require("@remix-run/react"), import_ai3 = require("react-icons/ai"), import_jsx_dev_runtime9 = require("react/jsx-dev-runtime");
 function ProductCarosel({ product }) {
   let formattedNumber = product.price.toLocaleString("tr-TR", {
     style: "decimal",
@@ -675,7 +685,7 @@ function ProductCarosel({ product }) {
     {
       className: "p-6 flex flex-col items-center justify-center text-center",
       style: { width: "100%", maxWidth: "400px", margin: "auto" },
-      children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react7.Link, { to: `/products/${product.code}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "flex flex-col items-center gap-4", children: [
+      children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react8.Link, { to: `/products/${product.code}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "flex flex-col items-center gap-4", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
           "div",
           {
@@ -809,7 +819,7 @@ var import_icons_material = require("@mui/icons-material"), import_jsx_dev_runti
   return (0, import_node3.json)({ horizontalProducts, products });
 };
 function ProductsIndexRoute() {
-  let { horizontalProducts, products } = (0, import_react9.useLoaderData)(), [activeIndex, setActiveIndex] = (0, import_react8.useState)(0), handlePrev = () => {
+  let { horizontalProducts, products } = (0, import_react10.useLoaderData)(), [activeIndex, setActiveIndex] = (0, import_react9.useState)(0), handlePrev = () => {
     setActiveIndex((prevIndex) => prevIndex === 0 ? horizontalProducts.length - 1 : prevIndex - 1);
   }, handleNext = () => {
     setActiveIndex((prevIndex) => prevIndex === horizontalProducts.length - 1 ? 0 : prevIndex + 1);
@@ -982,7 +992,7 @@ var index_exports = {};
 __export(index_exports, {
   default: () => IndexRoute
 });
-var import_react10 = require("@remix-run/react"), import_jsx_dev_runtime12 = require("react/jsx-dev-runtime");
+var import_react11 = require("@remix-run/react"), import_jsx_dev_runtime12 = require("react/jsx-dev-runtime");
 function IndexRoute() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "px-12 py-32 text-center text-gray-200 bg-gray-800", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("h1", { className: "text-5xl text-gray-100", children: "New arrivals are here" }, void 0, !1, {
@@ -996,7 +1006,7 @@ function IndexRoute() {
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
-      import_react10.Link,
+      import_react11.Link,
       {
         to: "/products",
         className: "inline-block px-6 py-2 mt-8 text-sm font-semibold text-gray-700 transition duration-300 bg-gray-100 rounded-md hover:bg-white hover:text-gray-900 hover:scale-110 color",
@@ -1045,7 +1055,7 @@ function AboutRoute() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-Y2MZRV32.js", imports: ["/build/_shared/chunk-4CLHJ6DZ.js", "/build/_shared/chunk-7HYSD3WE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-IC2FZRCN.js", imports: ["/build/_shared/chunk-KM7WCLVG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-2FUFWWKZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PNTGAINB.js", imports: ["/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-37Y7T5TL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-HTTWAWGX.js", imports: ["/build/_shared/chunk-BRSEBPNH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-PLCNZUY2.js", imports: ["/build/_shared/chunk-BRSEBPNH.js", "/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a4c3006e", hmr: void 0, url: "/build/manifest-A4C3006E.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-Q6VULSIN.js", imports: ["/build/_shared/chunk-IBRJ2CIW.js", "/build/_shared/chunk-7HYSD3WE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-HQIR5CGU.js", imports: ["/build/_shared/chunk-KM7WCLVG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/_index": { id: "routes/_index", parentId: "root", path: "_index", index: void 0, caseSensitive: void 0, module: "/build/routes/_index-BORXWP7X.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-PNTGAINB.js", imports: ["/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-37Y7T5TL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/$productId": { id: "routes/products/$productId", parentId: "root", path: "products/:productId", index: void 0, caseSensitive: void 0, module: "/build/routes/products/$productId-MFZMZDZQ.js", imports: ["/build/_shared/chunk-BRSEBPNH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/products/index": { id: "routes/products/index", parentId: "root", path: "products", index: !0, caseSensitive: void 0, module: "/build/routes/products/index-AUL6JUQP.js", imports: ["/build/_shared/chunk-BRSEBPNH.js", "/build/_shared/chunk-ZI2LDWAF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a818bf28", hmr: void 0, url: "/build/manifest-A818BF28.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !1, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
