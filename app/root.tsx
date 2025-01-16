@@ -34,7 +34,7 @@ export function links() {
    );
  }
 
- function Document({ children }) {
+ function Document({ children }: any) {
   return (
    <html lang="en">
     <head>
@@ -46,8 +46,7 @@ export function links() {
    );
  }
  
- export function ErrorBoundary({ error }) {
-  debugger
+ export function ErrorBoundary({ error }: any) {
   console.log(error)
   return (
    <Document>
